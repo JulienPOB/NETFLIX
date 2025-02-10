@@ -3,7 +3,6 @@
 body{
   margin: 0px;
   background-image: url(https://images.pexels.com/photos/3592627/pexels-photo-3592627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-  
 }
 
 .premier {
@@ -15,7 +14,6 @@ nav{
   height: 100px;
   width: 100vw;
   display : flex;
-  position: fixed;
 }
 
 #lecture {
@@ -31,6 +29,7 @@ nav{
   font-size: xx-large;
   color:red;
   margin-left: 50px;
+  background-color: transparent;
 }
 
 p{
@@ -66,6 +65,7 @@ p{
   color: rgb(255, 243, 243);
   margin-right: 20px;
   align-items: center;
+  background-color: transparent;
 }
 
 #play {
@@ -157,3 +157,24 @@ section div :hover {
   justify-content: s;
 }
 
+nav ul {
+  background-color: transparent;
+  display: flex;
+}
+
+nav ul li {
+  padding: 10px;
+  margin: 0px 10px;
+  list-style:none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 150px;
+}
+
+a {
+  font-family:"Bebas Neue", serif; 
+  font-size: x-large;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}

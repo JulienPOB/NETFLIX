@@ -9,14 +9,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!--Grand Fond-->
     <div class="premier">
+    <!--Barre de navigation-->
         <nav>
             <p id="logo">NETFLIX</p>
+            <div style="width: 0.5rem;"></div>
+            <ul>
+                <li>
+                    <a href="">Films</a>
+                </li>
+                <li>
+                    <a href="">Séries</a>
+                </li>
+                <li>
+                    <a href="">Autres</a>
+                </li>                       
+            </ul>
             <div id="droite">
                 <i class="fa-solid fa-magnifying-glass" id="loupe"></i>
                 <button id="abonner">s'abonner</button>
             </div>
         </nav>
+        <!--Bouton Lecture et Plus d'infos-->
         <div id="lecture">
             <button id="play">
                 <div id="triangle">
@@ -25,14 +40,13 @@
                 <div style="width: 0.5rem;"></div>
                 Lecture
             </button>
-            <button id="plus">
-                <div id="ex">
-                    <i class="fa-solid fa-circle-exclamation"></i>
-                </div>
-                <div style="width: 0.5rem;"></div>
-                Plus d'infos
-            </button>
+            <button id="plus" type="button" popovertarget="popover" popovertargetaction="show">Plus d'infos</button>
+            <div id="popover" popover="auto">
+            <p>You just need HTML for the Popover API</p>
+                <button type="button" popovertarget="popover" popovertargetaction="hide">Close</button>
+            </div>
         </div>
+        <!--Selection filù-->
         <section>
             <div id="titre">NOUVEAUTÉS</div>
             <div id="image">
